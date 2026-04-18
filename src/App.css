@@ -1,0 +1,22 @@
+@keyframes scrollBg {
+  from { background-position-x: 0; }
+  to   { background-position-x: -800px; }
+}
+
+.game {
+  width: 400px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border: 2px solid black;
+
+  background-image: url("./assets/background.jpg");
+  background-size: 800px 100%;
+  background-repeat: repeat-x;
+  image-rendering: pixelated;
+}
+
+.game--playing {
+  animation: scrollBg 4s linear infinite;
+}
